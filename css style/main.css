@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-image: url("../images/heaBMW.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.header__section_nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header__section_1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.header__section_nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.header__section_nav li{
+    display: inline;
+    font-size: medium;
+}
+.header__section_form{
+    display: flex;
+    justify-content: space-around;
+    gap: 40%;
+}
+.fuentesForm{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+.header__section_form img{
+    max-width: 90px;
+    max-height: 90px;
+}
+.header__section_2{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-start: 3;
+    margin-top: 1%;
+}
+.header__section_2 p{
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 1%;
+}
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 1%;
+}
+.header__section_2 button{
+    width: 140px;
+    background-color: rgb(48, 105, 204);
+    color: white;
+    border: none;
+    margin-left: 75px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: medium;
+}
+.header__section_2 button:hover{
+    background-color: rgb(99, 99, 237);
+}
+.main__nav1 ul{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin: 2%;
+    border-bottom: 1px solid grey;
+}
+.main__nav1 li{
+    display: inline;
+    font-size: 24px;
+    color: grey;
+    margin-bottom: 2%;
+}
+.main__nav1 li:hover{
+    color: black;
+    border-bottom: 2px solid blue;
+}
+.main__sec1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid grey;
+}
+.main__sec1 img{
+    max-width: 300px;
+    max-height: 550px;
+}
+.main__sec1 article{
+    grid-column: span 1;
+    display: block;
+}
+.main__sec1 h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main__sec1 p{
+    color: grey;
+    margin-bottom: 10px;
+}
+.main__sec1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.main__sec1 a::before{
+    content: "> ";
+}
+.main__sec2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+}
+.main__sec2 article{
+    display: inline-block;
+    padding: 10px;
+}
+.main__sec2 img{
+    width: 350px;
+    height: 200px;
+    gap: 10px;
+}
+.main__sec2 h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main__sec2 p{
+    width: 350px;
+    color: rgb(63, 63, 63);
+}
+.main__sec2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.main__sec2 a::before{
+    content: "> ";
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+.main__sec3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.main__sec3 article{
+    grid-column: span 1;
+    margin: 20px;
+    width: 400px;
+    justify-self: center;
+}
+.main__sec3 a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+.main__sec3 iframe{
+    width: 100%;
+}
+.main__sec3 a::before{
+    content: ">> ";
+    font-weight: bold;
+}
+@media all and (min-width: 768px){
+    main{
+        max-width: calc(100% - 20%);
+        margin: auto;
+    }
+    .main__sec3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+.main__nav2 ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 18px;
+}
+.main__nav2 li{
+    display: inline;
+    background-color: lightgray;
+    width: 100px;
+    padding: 40px;
+    text-align: center;
+    margin: 15px;
+}
+.main__nav2 h4{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-bottom: 10px;
+    color: black;
+}
+.main__nav2 a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+.footer{
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr 1fr;
+    background-color: lightgray;
+}
+.footer__section1{
+    grid-row: span 1;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    padding-top: 6px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.footer__section1_div a{
+    text-decoration: none;
+    color: rgb(105, 104, 104);
+}
+.footer__section2 {
+    display: block;
+}
+.footer__section1 h4{
+    font-weight: bold;
+    padding-bottom: 6px;
+    
+}
+.footer__section2{
+    padding: 15px;;
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    grid-row-start: 4;
+}
+.footer__section2 a{
+    text-decoration: none;
+    color: blue;
+}
+.footer__section2 li{
+    display: inline;
+    margin-right: 10px;
+}
+.footer__section2 h3{
+    margin-left: 3%;
+    font-weight: bold;
+}
